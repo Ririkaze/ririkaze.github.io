@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <menu>
+            <a href="" class="menu_btn"><span><b>О себе</b></span></a>
+            <a href="" class="menu_btn"><span><b>Ссылки</b></span></a>
+            <a href="" class="menu_btn"><span><b>Расписание</b></span></a>
+            <a href="" class="menu_btn"><span><b>Почта</b></span></a>
+        </menu>
+    </header>
+    <section>
+        <div class="slider">
+            <div class="item">
+                <img src="img/slide1.jpg" alt="Первый слайд">
+                <div class="slideText">Заголовок слайда 1</div>
+            </div>
+            <div class="item">
+                <img src="img/slide2.jpg" alt="Второй слайд">
+                <div class="slideText">Заголовок слайда 2</div>
+            </div>
+            <div class="item">
+                <img src="img/slide3.jpg" alt="Третий слайд">
+                <div class="slideText">Заголовок слайда 3</div>
+            </div>
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+    </section>
+    <section class="about">
+        <h1>Кто я?</h1>
+        <h3>Основная деятельность</h3>
+        <p>Дпукпукпцпаьу купщукпьукпль кпущкьпукщпьцук terghwire
+            ergnrio gerignuerig rgiregnewripgn rgerignewrig
+        </p>
+        <hr color="#cc1a58">
+        <h3>Для чего все это</h3>
+        <p>Дпукпукпцпаьу купщукпьукпль кпущкьпукщпьцук terghwire
+            ergnrio gerignuerig rgiregnewripgn rgerignewrig
+        </p>
+    </section>
+    <section class="share">
+        <h1>Ссылки</h1>
+        <div class="links">
+            <div class="link">
+                <a href="#" class="social-button ico-vk-vk"></a>
+                <p><b>VK</b></p>
+            </div>
+            <div class="link">
+                <a href="#" class="social-button ico-twitter"></a>
+                <p><b>twitter</b></p>
+            </div>
+            <div class="link">
+                <a href="#" class="social-button ico-instagram"></a>
+                <p><b>instagram</b></p>
+            </div>
+            <div class="link">
+                <a href="#" class="social-button ico-youtube"></a>
+                <p><b>youtube</b></p>
+            </div>
+            <div class="link">
+                <a href="#" class="social-button ico-twitch"></a>
+                <p><b>twitch</b></p>
+            </div>
+        </div>
+    </section>
+    <section class="timetable">
+        <h1>
+            Расписание
+        </h1>
+        <hr id="layer2" color="#cc1a58">
+        <div class="days">
+            <div id="layer1" class="day_0"><b>Sun<br>12:30</b></div>
+            <div id="layer1" class="day_1"><b>Mon<br>12:30</b></div>
+            <div id="layer1" class="day_2"><b>Tue<br>12:30</b></div>
+            <div id="layer1" class="day_3"><b>Wed<br>12:30</b></div>
+            <div id="layer1" class="day_4"><b>Thu<br>12:30</b></div>
+            <div id="layer1" class="day_5"><b>Fri<br>12:30</b></div>
+            <div id="layer1" class="day_6"><b>Sat<br>12:30</b></div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="" id="back" class="menu_btn"><span><b>Назад</b></span></a>
+    </footer>
+
+
+    <script src="script.js"></script>	
+<script>
+
+    var today = new Date();
+    var str = today.getUTCDay();
+        if (str ==0) {
+            document.getElementsByClassName('day_0')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_0')[0].style.backgroundColor = "white";
+        }
+        if (str ==1) {
+            document.getElementsByClassName('day_1')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_1')[0].style.backgroundColor = "white";
+        }
+        if (str ==2) {
+            document.getElementsByClassName('day_2')[0].style.color = "#cc1a58";
+            document.getElementsByClassName('day_2')[0].style.backgroundColor = "white";
+        }
+        if (str ==3) {
+            document.getElementsByClassName('day_3')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_3')[0].style.backgroundColor = "white";
+        }
+        if (str ==4) {
+            document.getElementsByClassName('day_4')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_4')[0].style.backgroundColor = "white";
+        }
+        if (str ==5) {
+            document.getElementsByClassName('day_5')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_5')[0].style.backgroundColor = "white";
+        }
+        if (str ==6) {
+            document.getElementsByClassName('day_6')[0].style.color = "#cc1a58",
+            document.getElementsByClassName('day_6')[0].style.backgroundColor = "white";
+        }
+    console.log(str);    
+    </script>
+</body>
+</html>

@@ -162,13 +162,14 @@ menu {
 
 
 
-
 footer {
     background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 #back {
     position: static;
-    left: 50%;
     bottom: 33px;
     text-decoration: none;
     display: inline-block;

@@ -168,7 +168,7 @@ footer {
 }
 #back {
     position: static;
-    left: 580px;
+    left: 50%;
     bottom: 33px;
     text-decoration: none;
     display: inline-block;
